@@ -1,0 +1,38 @@
+<?php
+
+$name = htmlentities($_POST['HeroName']);
+$name = strtolower($name);
+$name = ucwords($name);
+$race =  $_POST['Race'];
+$class = $_POST['Class'];
+$age = $_POST['Age'];
+$gender = $_POST['gender'];
+$kingdom = $_POST['KingdomName'];
+
+print_r($_POST);
+//$characterport = "<img src = 'Images/";
+ $charactersheet = "Hello World";
+
+        $characterport = "<img src = 'Images/HuThMa.jpg";
+?>
+
+<html>
+<head>
+    <title>A made adventure</title>
+
+       
+</head>
+<body>
+    <div id =" form container">
+        <h3 class ="Content ">
+            <div class ="CharacterSheet">
+                <?php
+                echo ($charactersheet);
+                echo ($characterport);
+                
+                ?>
+            </div>
+        </h3>
+    </div>
+</body>
+</html>
